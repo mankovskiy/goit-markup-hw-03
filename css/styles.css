@@ -16,6 +16,8 @@
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 a {
@@ -86,6 +88,8 @@ a {
   background-color: var(--primary-bcg-color);
 }
 .hero .title {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--primary-white-color);
   font-style: normal;
   font-weight: 900;
@@ -116,7 +120,11 @@ a {
 
 /* -------------------------------------------------------Наши особенности --------------------------*/
 
+.feature-list {
+  margin-top: 0;
+}
 .feature-list .title {
+  margin-top: 0;
   color: var(--title-text-color);
   font-style: 400;
   font-size: 14px;
@@ -133,6 +141,8 @@ a {
 }
 /* --------------------------------------------------Чем мы занимаемся ---------------------------------*/
 .section-work .title {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
@@ -145,6 +155,8 @@ a {
   background-color: var(--section-team-color);
 }
 .section-team .title {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
@@ -161,6 +173,7 @@ a {
   letter-spacing: 0.03em;
 }
 .section-team .profession {
+  margin-bottom: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -222,6 +235,7 @@ a {
   letter-spacing: 0.06em;
 }
 .portfolio-list .text {
+  margin-bottom: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
