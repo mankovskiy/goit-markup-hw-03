@@ -27,6 +27,13 @@ a {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: solid 1px teal;
+}
 
 /*------------------------------------------------- logo------------------------------------ */
 .logo {
@@ -96,8 +103,11 @@ a {
   font-size: 16px;
   line-height: 1.88;
   /* display: flex;
-  align-items: center;
-  text-align: center; */
+  align-items: center; */
+  text-align: center;
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 200px;
   letter-spacing: 0.06em;
   border: none;
   border-radius: 4px;
