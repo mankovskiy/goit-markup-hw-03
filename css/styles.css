@@ -91,7 +91,7 @@ a {
 .button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  font-family: Roboto;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
