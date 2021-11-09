@@ -44,6 +44,9 @@ a {
   margin: 0 auto;
   outline: solid 1px teal;
 }
+.no-grap {
+  display: block;
+}
 
 /*------------------------------------------------- logo------------------------------------ */
 .logo {
@@ -148,6 +151,10 @@ a {
   letter-spacing: 0.03em;
 }
 /* --------------------------------------------------Чем мы занимаемся ---------------------------------*/
+.section-work {
+  background-color: tomato;
+}
+
 .section-work .title {
   margin-top: 0;
   margin-bottom: 0;
