@@ -38,28 +38,27 @@ a {
   font-family: Roboto, sans-serif;
 }
 .container {
-  /* display: flex; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
-  outline: solid 1px teal;
+  margin-left: auto;
+  margin-right: auto;
 }
 .no-grap {
   display: block;
 }
 
 /*------------------------------------------------- logo------------------------------------ */
+/* .position {
+  display: flex;
+} */
+.page-header {
+  display: flex;
+}
 
-.container.position {
-  display: flex;
-}
-.position {
-  display: flex;
-}
 .logo {
-  padding-top: 24px;
-  margin: 0 93px 25px 0;
+  margin-right: 93px;
+
   color: var(--logo-second-part);
   font-family: Raleway;
   font-weight: 700;
@@ -73,30 +72,36 @@ a {
 }
 
 /* главная навигация */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 .site-nav {
-  /* display: flex; */
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-nav > li:first-child {
+/* .site-nav > li:first-child {
   margin-left: 0;
   margin-right: 0;
-}
-.site-nav > li:last-child {
+} */
+/* .site-nav > li:last-child {
   margin-right: 331px;
   margin-left: 0;
-}
+} */
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   /* margin: 0 50px 32px 50px;
   padding-top: 32px;
   outline: tomato; */
 }
-.site-nav > li {
-  margin: 0 50px 32px 50px;
-  padding-top: 32px;
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-nav .link:hover,
@@ -109,10 +114,21 @@ a {
 
 /*------------------------------------------ Контакты в главном меню -------------------------------*/
 
-/* .list-nav {
-  padding-top: 32px;
+/* .position-right {
+  display: flex;
+  justify-content: flex-end;
 } */
-.list-nav > li:first-child {
+.list-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.list-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* .list-nav > li:first-child {
   margin-right: 50px;
   margin-bottom: 32px;
   padding-top: 32px;
@@ -122,7 +138,7 @@ a {
   margin-right: 0;
   padding-top: 32px;
   margin-bottom: 32px;
-}
+} */
 .contact-nav {
   color: var(--primary-text-color);
   font-style: normal;
@@ -137,11 +153,17 @@ a {
 
 /*------------------------------------------------------- Секция hero ----------------------------------------*/
 .hero {
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+
   background-color: var(--primary-bcg-color);
 }
 .hero .title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
+  padding-top: 200px;
+
   color: var(--primary-white-color);
   font-style: normal;
   font-weight: 900;
@@ -172,11 +194,18 @@ a {
 
 /* -------------------------------------------------------Наши особенности --------------------------*/
 
+.section {
+  margin-top: 94px;
+}
 .feature-list {
+  display: flex;
   margin-top: 0;
 }
+
 .feature-list .title {
   margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
   color: var(--title-text-color);
   font-style: 400;
   font-size: 14px;
@@ -184,7 +213,16 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .feature-list .text {
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  text-align: left;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -192,9 +230,22 @@ a {
   letter-spacing: 0.03em;
 }
 /* --------------------------------------------------Чем мы занимаемся ---------------------------------*/
+
+.section-work {
+  margin-top: 94px;
+  padding-bottom: 94px;
+}
+.section-work .list {
+  display: flex;
+  margin-top: 50px;
+}
+.section-work .item:not(:last-child) {
+  margin-right: 30px;
+}
 .section-work .title {
   margin-top: 0;
   margin-bottom: 0;
+
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
@@ -204,6 +255,9 @@ a {
 
 /* ---------------------------------------------------Наша команда ------------------------------------------*/
 .section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--section-team-color);
 }
 .section-team .title {
@@ -216,7 +270,18 @@ a {
   letter-spacing: 0.03em;
 }
 
+.team-list {
+  display: flex;
+  margin-top: 50px;
+}
+.section-team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section-team .name {
+  margin-top: 30px;
+  margin-bottom: 0;
+  text-align: center;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: 500;
@@ -225,7 +290,10 @@ a {
   letter-spacing: 0.03em;
 }
 .section-team .profession {
+  margin-top: 10px;
   margin-bottom: 0;
+
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -239,7 +307,14 @@ a {
   background-color: var(--primary-bcg-color);
 }
 
+.footer .logo {
+  display: inline-block;
+  margin-right: 0;
+  padding-top: 60px;
+}
 .adres {
+  margin-top: 20px;
+  margin-bottom: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -249,12 +324,19 @@ a {
 }
 
 .contact-footer {
+  display: inline-block;
+  margin-top: 9px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .list {
+  padding-bottom: 60px;
 }
 /*------------------------------------------------- СТИЛИ ПОРТФОЛИО --------------------------------------*/
 
