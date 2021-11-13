@@ -140,6 +140,9 @@ a {
   margin-bottom: 32px;
 } */
 .contact-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 500;
@@ -153,6 +156,7 @@ a {
 
 /*------------------------------------------------------- Секция hero ----------------------------------------*/
 .hero {
+  padding-top: 200px;
   height: 600px;
   margin: 0 auto;
   text-align: center;
@@ -162,7 +166,6 @@ a {
 .hero .title {
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
 
   color: var(--primary-white-color);
   font-style: normal;
@@ -194,8 +197,8 @@ a {
 
 /* -------------------------------------------------------Наши особенности --------------------------*/
 
-.section {
-  margin-top: 94px;
+.feature {
+  padding-top: 94px;
 }
 .feature-list {
   display: flex;
@@ -214,6 +217,9 @@ a {
   text-transform: uppercase;
 }
 
+.feature-list .item {
+  max-width: 270px;
+}
 .feature-list .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -232,7 +238,7 @@ a {
 /* --------------------------------------------------Чем мы занимаемся ---------------------------------*/
 
 .section-work {
-  margin-top: 94px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .section-work .list {
