@@ -3,6 +3,7 @@
 /* Белые цвет #ffffff */
 /*Акцент  #2196F3*/
 /* фон секции "наша команда" #F5F4FA */
+/* Цвет рамки меню #ECECEC */
 
 :root {
   --primary-text-color: #757575;
@@ -13,6 +14,8 @@
   --logo-second-part: #000000;
   --primary-bcg-color: #2f303a;
   --section-team-color: #f5f4fa;
+  --nav-border-color: #ececec;
+  --card-border-color: #eeeeee;
   /* Cетка для портфолио */
   --portfolio-list-gap: 30px;
 }
@@ -78,11 +81,12 @@ img {
   color: var(--accent-color);
 }
 
-/* главная навигация */
+/* ---------------------------------------Главная навигация---------------------------------- */
 .main-nav {
   display: flex;
   align-items: center;
 }
+
 .site-nav {
   display: flex;
   font-weight: 500;
@@ -90,22 +94,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-/* .site-nav > li:first-child {
-  margin-left: 0;
-  margin-right: 0;
-} */
-/* .site-nav > li:last-child {
-  margin-right: 331px;
-  margin-left: 0;
-} */
+
 .site-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--title-text-color);
-  /* margin: 0 50px 32px 50px;
-  padding-top: 32px;
-  outline: tomato; */
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -121,10 +115,6 @@ img {
 
 /*------------------------------------------ Контакты в главном меню -------------------------------*/
 
-/* .position-right {
-  display: flex;
-  justify-content: flex-end;
-} */
 .list-nav {
   display: flex;
   align-items: center;
@@ -135,17 +125,6 @@ img {
   margin-right: 50px;
 }
 
-/* .list-nav > li:first-child {
-  margin-right: 50px;
-  margin-bottom: 32px;
-  padding-top: 32px;
-  margin-left: 0;
-}
-.list-nav > li:last-child {
-  margin-right: 0;
-  padding-top: 32px;
-  margin-bottom: 32px;
-} */
 .contact-nav {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -157,6 +136,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .contact-nav:hover {
   color: var(--accent-color);
 }
@@ -167,9 +147,10 @@ img {
   height: 600px;
   margin: 0 auto;
   text-align: center;
-
+  border-top: 1px solid var(--nav-border-color);
   background-color: var(--primary-bcg-color);
 }
+
 .hero .title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -428,6 +409,8 @@ img {
   letter-spacing: 0.03em;
 }
 .portfolio-subtitle {
+  border: 1px solid var(--card-border-color);
+  border-top: 0;
   padding: 20px 24px;
 }
 .portfolio-subtitle .title {
