@@ -13,6 +13,8 @@
   --logo-second-part: #000000;
   --primary-bcg-color: #2f303a;
   --section-team-color: #f5f4fa;
+  /* Cетка для портфолио */
+  --portfolio-list-gap: 30px;
 }
 
 .visually-hidden {
@@ -47,6 +49,10 @@ a {
 .no-grap {
   display: block;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 
 /*------------------------------------------------- logo------------------------------------ */
 /* .position {
@@ -58,6 +64,7 @@ a {
 
 .logo {
   margin-right: 93px;
+  padding: 24px 0 25px 0;
 
   color: var(--logo-second-part);
   font-family: Raleway;
@@ -347,7 +354,30 @@ a {
 /*------------------------------------------------- СТИЛИ ПОРТФОЛИО --------------------------------------*/
 
 /* ---------------------------------------------Кнопки фильтра Портфолио -----------------------------------*/
+
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.galary-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+/* .galary-btn .item + .item {
+  margin-left: 8px;
+} */
+.galary-btn .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button-link {
+  display: block;
+  padding: 6px 22px;
+  min-width: 100%;
+
   color: var(--title-text-color);
   background-color: var(--primary-button-color);
   font-family: inherit;
@@ -366,6 +396,21 @@ a {
   background-color: var(--accent-color);
 }
 /* ----------------------------------------------Основная секция портфолио -------------------------------------*/
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--portfolio-list-gap));
+  margin-left: calc(-1 * var(--portfolio-list-gap));
+}
+
+.portfolio-list .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: var(--portfolio-list-gap);
+  margin-left: var(--portfolio-list-gap);
+}
+
 .portfolio-list .title {
   color: var(--title-text-color);
   font-style: normal;
@@ -381,4 +426,13 @@ a {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+.portfolio-subtitle {
+  padding: 20px 24px;
+}
+.portfolio-subtitle .title {
+  margin: 0;
+}
+.portfolio-subtitle .text {
+  margin-top: 4px;
 }
